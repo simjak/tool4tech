@@ -40,7 +40,7 @@ export default function AddTool() {
     });
   };
 
-  
+
 const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse',
@@ -69,23 +69,27 @@ const tableStyle = {
     borderRadius: '4px',
   };
 
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: '20px',
-  };
+const formStyle = {
+  display: 'flex',
+  flexDirection: 'row', // Change from 'column' to 'row'
+  flexWrap: 'wrap', // Allows items to wrap to the next line if needed
+  alignItems: 'center', // Aligns items vertically
+  marginBottom: '20px',
+};
 
-  const inputStyle = {
-    padding: '10px',
-    marginBottom: '10px',
-    border: '1px solid #ddd',
-    borderRadius: '4px',
-  };
+const inputStyle = {
+  padding: '10px',
+  margin: '0 10px 10px 0', // Add right margin for spacing between inputs
+  border: '1px solid #ddd',
+  borderRadius: '4px',
+  width: 'calc(20% - 20px)', // Adjust width to fit in a row, accounting for padding and margin
+};
 
-  const addButtonStyle = {
-    ...buttonStyle,
-    backgroundColor: '#5C6BC0', // Different color for the Add button
-  };
+const addButtonStyle = {
+  ...buttonStyle,
+  width: 'calc(20% - 20px)', // Adjust width to match input fields
+  backgroundColor: '#5C6BC0', // Different color for the Add button
+};
 
   return (
     <div>
